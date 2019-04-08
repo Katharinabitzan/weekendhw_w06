@@ -15,6 +15,8 @@ const handleFormSubmit = function (evt) {
   const newAnimal = createAnimalList(evt.target);
   const animalList = document.querySelector('#animal-list');
   animalList.appendChild(newAnimal);
+
+  event.target.reset()
 }
 
 const createAnimalList = function (form) {
